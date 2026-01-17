@@ -1,7 +1,7 @@
 /******************************************************************************
- * Họ và tên: [ĐIỀN TÊN TẠI ĐÂY]
- * MSSV:      [ĐIỀN MSSV TẠI ĐÂY]
- * Lớp:       [ĐIỀN LỚP TẠI ĐÂY]
+ * Họ và tên: [Nguyễn Ngọc Quang]
+ * MSSV:      [Ps47259]
+ * Lớp:       [com108 cs21301]
  *****************************************************************************/
 
 //  BÀI 4: XÂY DỰNG MENU CHƯƠNG TRÌNH CHO 3 BÀI TẬP TRÊN 
@@ -14,10 +14,16 @@ int main(){
     char luaChon;
     printf("ta có các chức năng :\na)giải phương trình bậc 1\nb)giải phương trình bậc 2\nc) tính tiền điện\n xin hãy chọn chức năng :");
     scanf("%c",&luaChon);
+    while (luaChon!='a'&&luaChon!='b'&&luaChon!='c')
+    {
+       printf("hãy nhập lựa chọn là 'a','b','c':");
+       scanf("%c",&luaChon);
+    }
+    
     switch (luaChon)
     {
     case 'a':
-printf("giải phương trình bậc 1 ax + b = 0\nư");
+printf("giải phương trình bậc 1 ax + b = 0\n");
         // tính phương trình bậc 1
        //khai báo biến
     float a1=0,b1=0;
