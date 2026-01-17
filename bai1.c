@@ -18,16 +18,14 @@
 #include <stdio.h>
 
 int main(){
-
-    int main(){
     // Khai báo biến
 float diemToan=0,diemLy=0,diemHoa=0,diemTrungBinh=0;
     // Nhập dữ liệu
-printf("hãy nhập điểm toán :\n");
+printf("hãy nhập điểm toán :");
 scanf("%f",&diemToan);
-printf("hãy nhập điểm lý :\n");
+printf("hãy nhập điểm lý :");
 scanf("%f",&diemLy);
-printf("hãy nhập điểm hóa :\n");
+printf("hãy nhập điểm hóa :");
 scanf("%f",&diemHoa);
     // Xử lý, tính toán
 diemTrungBinh= (diemHoa+ diemLy*2+diemToan*3)/6;
@@ -35,12 +33,12 @@ diemTrungBinh= (diemHoa+ diemLy*2+diemToan*3)/6;
     //xét điều kiệm
     while (diemHoa>10||diemLy>10||diemToan>10)
     {
-        printf("hãy nhập điểm nhỏ hơn 10");
-        printf("hãy nhập điểm toán :\n");
+        printf("hãy nhập điểm nhỏ hơn 10\n");
+        printf("hãy nhập điểm toán :");
         scanf("%f",&diemToan);
-        printf("hãy nhập điểm lý :\n");
+        printf("hãy nhập điểm lý :");
         scanf("%f",&diemLy);
-        printf("hãy nhập điểm hóa :\n");
+        printf("hãy nhập điểm hóa :");
         scanf("%f",&diemHoa);
         diemTrungBinh= (diemHoa+ diemLy*2+diemToan*3)/6;
         printf("Điểm trung bình :%.2f\n",diemTrungBinh);
@@ -67,5 +65,4 @@ diemTrungBinh= (diemHoa+ diemLy*2+diemToan*3)/6;
     }
     
 return 0;
-}
 }
