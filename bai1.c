@@ -1,7 +1,7 @@
 /******************************************************************************
- * Họ và tên: [ĐIỀN TÊN TẠI ĐÂY]
- * MSSV:      [ĐIỀN MSSV TẠI ĐÂY]
- * Lớp:       [ĐIỀN LỚP TẠI ĐÂY]
+ * Họ và tên: [Nguyễn Ngọc Quang]
+ * MSSV:      [PS47259]
+ * Lớp:       [com108-cs21301]
  *****************************************************************************/
 
 // BÀI 1: XÂY DỰNG CHƯƠNG TRÌNH TÍNH HỌC LỰC  
@@ -19,13 +19,53 @@
 
 int main(){
 
+    int main(){
     // Khai báo biến
-
-
+float diemToan=0,diemLy=0,diemHoa=0,diemTrungBinh=0;
     // Nhập dữ liệu
-
-
-    // Xử lý, tính toán VÀ Hiển thị kết quả
-
-    return 0;
+printf("hãy nhập điểm toán :\n");
+scanf("%f",&diemToan);
+printf("hãy nhập điểm lý :\n");
+scanf("%f",&diemLy);
+printf("hãy nhập điểm hóa :\n");
+scanf("%f",&diemHoa);
+    // Xử lý, tính toán
+diemTrungBinh= (diemHoa+ diemLy*2+diemToan*3)/6;
+    
+    //xét điều kiệm
+    while (diemHoa>10||diemLy>10||diemToan>10)
+    {
+        printf("hãy nhập điểm nhỏ hơn 10");
+        printf("hãy nhập điểm toán :\n");
+        scanf("%f",&diemToan);
+        printf("hãy nhập điểm lý :\n");
+        scanf("%f",&diemLy);
+        printf("hãy nhập điểm hóa :\n");
+        scanf("%f",&diemHoa);
+        diemTrungBinh= (diemHoa+ diemLy*2+diemToan*3)/6;
+        printf("Điểm trung bình :%.2f\n",diemTrungBinh);
+    }
+    //xét học lực
+    if (diemTrungBinh>=9)
+    {
+        printf("Học lực xuất sắc");
+    }else if (diemTrungBinh>=8)
+    {
+        printf("học lực giỏi");
+    }else if (diemTrungBinh>=6.5)
+    {
+        printf("học lực Khá");
+    }else if (diemTrungBinh>=5)
+    {
+        printf("học lực trung bình");
+    }else if (diemTrungBinh>=3.5)
+    {
+        printf("học lực yếu");
+    }else 
+    {
+        printf("học lực Kém");
+    }
+    
+return 0;
+}
 }
