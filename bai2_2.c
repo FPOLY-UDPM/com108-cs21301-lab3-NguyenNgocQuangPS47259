@@ -1,7 +1,7 @@
 /******************************************************************************
- * Họ và tên: [ĐIỀN TÊN TẠI ĐÂY]
- * MSSV:      [ĐIỀN MSSV TẠI ĐÂY]
- * Lớp:       [ĐIỀN LỚP TẠI ĐÂY]
+ * Họ và tên: [Nguyễn Ngọc Quang]
+ * MSSV:      [Ps47259]
+ * Lớp:       [com108 cs21301]
  *****************************************************************************/
 
 //  BÀI 2: XÂY DỰNG CHƯƠNG TRÌNH GIẢI PHƯƠNG TRÌNH  
@@ -20,15 +20,54 @@
 // o X2 = (-b – căn(delta))/(2*a)
 
 #include <stdio.h>
-
-int main(){
-    
-    // Khai báo biến
-
+#include <math.h>
+int main() {
+    double a, b, c;
+    double delta, x1, x2;
 
     // Nhập dữ liệu
+    printf("Nhap a: ");
+    scanf("%lf", &a);
+    printf("Nhap b: ");
+    scanf("%lf", &b);
+    printf("Nhap c: ");
+    scanf("%lf", &c);
 
-
-    // Xử lý, tính toán VÀ Hiển thị kết quả
-
+    // Xét điều kiện
+    //a=0 giải phương trình bậc 1
+    if (a==0)
+    {
+        if (b==0)
+        {
+            if (c==0)
+            {
+                printf("phương trình vô số nghiệm");
+            }else
+            {
+                printf("phương trình vô nghiệm1");
+            } 
+        }else
+        {
+            printf("giá trị phương trình = :%.2f",-c/b);
+        }
+    //a!= 0 giải phương trình bậc 2    
+    }else
+    {
+        delta=b*b-4*a*c;
+        if (delta<0)
+        {
+            printf("phương trình vô nghiệm2");
+        }else if (delta==0)
+        {
+            printf("phương trình có nghiệm kép :%.2f",-b/(2*a));
+        }else
+        {
+            printf("phương trình có 2 nghiệm\n nghiệm X1 = :%.2f",(-b + sqrt(delta)) / (2*a));
+            printf(" nghiệm X2 = :%.2f",(-b - sqrt(delta)) / (2*a));
+        }
+        
+        
+    }
+    
+return 0;
 }
